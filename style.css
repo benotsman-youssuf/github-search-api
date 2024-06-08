@@ -1,0 +1,153 @@
+:root {
+    --main-bg-color: #141c2f;
+    --main-card-color: #1e2a47;
+    --main-followers-color: #141c30;
+    --main-text-color: #fff;
+    --main-border-radius: 15px;
+    --main-link-color: #0079ff;
+    --main-link-hover-color: #60abff;
+    --main-border-color: #4b6a9b;
+    --main-box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --main-transition: 0.3s;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: var(--main-bg-color); /* Styles for the <body> element */
+    color: var(--main-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  main {
+    display: flex; /* Styles for the <main> element */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 730px;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex; /* Styles for the <div class="header"> element */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--main-card-color);
+    border-radius: var(--main-border-radius);
+    margin-bottom: 20px;
+  }
+  
+  .theme {
+    display: flex; /* Styles for the <div class="theme"> element */
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .theme-button {
+    /* Styles for the <button class="theme-button"> element */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: var(--main-transition);
+  }
+  
+  .search {
+    display: flex; /* Styles for the <div class="search"> element */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--main-card-color);
+    border-radius: var(--main-border-radius);
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .search input {
+    /* Styles for the <input type="text" id="username"> element */
+    flex-grow: 1;
+    background-color: var(--main-card-color);
+    border: 1px solid var(--main-border-color);
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--main-text-color);
+  }
+  
+  .search button {
+    /* Styles for the <button id="search"> element */
+    background-color: var(--main-link-color);
+    color: var(--main-text-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: var(--main-transition);
+  }
+  
+  .search button:hover {
+    background-color: var(--main-link-hover-color);
+  }
+  
+  .profile {
+    display: flex; /* Styles for the <div class="profile"> element */
+    gap: 30px;
+    width: 100%;
+    background-color: var(--main-card-color);
+    border-radius: var(--main-border-radius);
+    box-shadow: var(--main-box-shadow);
+    padding: 30px;
+  }
+  
+  .profile img {
+    /* Styles for the <img> element within <div class="profile"> */
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  
+  .user-infos {
+    display: flex; /* Styles for the <div class="user-infos"> element */
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .profile-header {
+    display: flex; /* Styles for the <div class="profile-header"> element */
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .profile-details {
+    display: flex; /* Styles for the <div class="profile-details"> element */
+    gap: 20px;
+  }
+  
+  .profile-detail {
+    /* Styles for the <div class="profile-detail"> element */
+    background-color: var(--main-followers-color);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .socials {
+    /* Styles for the <div class="socials"> element */
+    display: flex;
+    gap: 10px;
+  }
